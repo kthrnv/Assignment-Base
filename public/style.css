@@ -25,12 +25,22 @@ h1 {
 .section {
     max-width: 2000px;
     min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
   }
    
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+label {
+    display: block;
+    float:initial;
 }
 
 input {
@@ -39,4 +49,46 @@ input {
     margin: 10px 5px;
     box-sizing: border-box;
     background-color: rgb(245, 245, 245);
+}
+  
+#type-restaurant {
+    font-family: 'Raleway', sans-serif;
+    width: 500px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid rgb(61, 61, 61);
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#filtered-cases {
+    position: relative;
+}
+
+#filtered-cases ul {
+    width: 500px;
+    margin: 0px;
+    padding: 0;
+    list-style-type: none;
+    border-width: initial;
+    border-style: none;
+    border-color:rgb(59, 59, 59);
+    border-image: initial;
+    flex: 2;
+    display: flex;
+}
+
+#filtered-cases li {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    display: block;
+    background: linear-gradient(to bottom, #f8e1b1 20%, #ffe078 80%);
+    text-align: center;
+    flex: 1;
+}
+
+.restaurantsFiltered {
+    border-top: 1px #f8e1b1;
+    margin-bottom: 100px;
 }
