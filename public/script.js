@@ -6,6 +6,7 @@ const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
 const food_info = [];
 
 fetch(endpoint)
+/* Watch March 4 Lecture in how to adjust this */
     .then(blob => blob.json())
     .then(data => food_info.push(...data))
 
@@ -36,5 +37,3 @@ function displayMatches() {
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
-
-// All it needs is a little push
