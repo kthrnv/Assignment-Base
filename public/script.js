@@ -36,3 +36,5 @@ function displayMatches() {
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
+
+// All it needs is a little push
