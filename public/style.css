@@ -61,11 +61,11 @@ input {
     font-size: 12px;
 }
 
-#filtered-cases {
+.filtered-cases {
     position: relative;
 }
 
-#filtered-cases ul {
+.filtered-cases ul {
     width: 500px;
     margin: 0px;
     padding: 0;
@@ -78,7 +78,7 @@ input {
     display: flex;
 }
 
-#filtered-cases li {
+.filtered-cases li {
     margin: 0px;
     padding: 10px;
     border-radius: 3px;
