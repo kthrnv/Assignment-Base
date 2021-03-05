@@ -1,18 +1,11 @@
 body {
-    font-size: 14px;
-    font-weight: 350;
     margin: 0px;
     padding: 50px;
+    font-size: 14px;
+    font-weight: 350;
     text-align: center;
     line-height: 1.7;
     color: rgb(44, 44, 44);
-}
-
-label {
-    display: block;
-    float:initial;
-    font-weight:bolder;
-    padding-top: 5%;
 }
 
 html {
@@ -20,13 +13,21 @@ html {
     font-size: 10px;
     background: #d090e0;
 }
-  
+
 h1 {
-    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 4rem;
     text-decoration: underline;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
+
+label {
+    display: block;
+    float: initial;
+    font-weight: bolder;
+    color: white;
+    padding-top: 5%;
 }
    
 .container {
@@ -47,27 +48,11 @@ input {
     font-family: 'Raleway', sans-serif;
     width: 500px;
     height: 32px;
+    margin: 8px;
+    padding: 5px 10px;
     border-radius: 3px;
     border: 1px solid rgb(61, 61, 61);
-    padding: 5px 10px;
     font-size: 12px;
-}
-
-.filtered-cases {
-    position: relative;
-}
-
-.filtered-cases ul {
-    width: 500px;
-    margin: 0px;
-    padding: 0;
-    list-style-type: none;
-    border-width: initial;
-    border-style: none;
-    border-color:rgb(59, 59, 59);
-    border-image: initial;
-    flex: 2;
-    display: flex;
 }
 
 li {
@@ -78,11 +63,6 @@ li {
     display: block;
     background: linear-gradient(to bottom, #f8e1b1 20%, #ffe078 80%);
     text-align: left;
-    text-transform:uppercase;
+    text-transform: uppercase;
     flex: 1;
-}
-
-.restaurants-list {
-    border-top: 1px #f8e1b1;
-    margin-bottom: 100px;
 }
