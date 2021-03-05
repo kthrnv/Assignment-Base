@@ -9,21 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="section">
-        <div class="container">
-            <h1>Matthew Nguyen, Katherine Vo, Emily Zheng</h1>
-            <form action='/api' method='post'>
-                <div class='form-row'>
-                    <label for='type-restaurant'>Type of Restaurant:</label>
-                    <input id='type-restaurant' name='type-restaurant' type='text' placeholder="Search Type of Restaurant">
-                </div>
-            </form>
-            <div class= "filtered-cases">
-                <ul class="restaurantsFiltered"></ul>
+    <div class="container">
+        <h1>Matthew Nguyen, Katherine Vo, Emily Zheng</h1>
+        <form action='/api' method='post'>
+            <div class='form-row'>
+                <label for='type-restaurant'>Type of Restaurant:</label>
+                <input id='type-restaurant' name='type-restaurant' type='text' placeholder="Search Type of Restaurant">
             </div>
-            <div class = "suggestions"></div>
+        </form>
+        <div class= "filtered-cases">
+            <ul class="restaurants-list"></ul>
         </div>
-    </section>
+        <div class = "suggestions"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
