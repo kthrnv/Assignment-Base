@@ -55,6 +55,12 @@ input {
     font-size: 12px;
 }
 
+.list-name {
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(148, 136, 109);
+}
+
 li {
     width: 500px;
     margin: 10px;
