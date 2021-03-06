@@ -30,7 +30,10 @@ async function windowActions() {
         const html = matchArray.map(result => {        
             return `
                 <li>
-                <span class="place">${result.name}<br/>
+                <span class= "place">
+                <div class="list-name">
+                    ${result.name}
+                </div>
                 ${result.category}<br/>
                 ${result.address_line_1}<br/>
                 ${result.zip}<br/></span>
