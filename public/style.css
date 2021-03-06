@@ -61,6 +61,10 @@ input {
     text-shadow: 1px 1px 2px rgb(148, 136, 109);
 }
 
+.title-case {
+    text-transform: capitalize;  
+}
+
 li {
     width: 500px;
     margin: 10px;
