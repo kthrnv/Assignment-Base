@@ -27,13 +27,25 @@ async function windowActions() {
 
     function displayMatches(event) {
         const matchArray = findMatches(event.target.value, food_info);
-        const html = matchArray.map(result => {        
+        const html = matchArray.map(result => {      
+            // Changes category into title case as it is being typed in the input
+            const regex = new RegExp(event.target.value, 'gi');
+            const category = result.category.replace(regex, `<span class="title-case">${event.target.value}</span>`);
+
+            // This returns the matching results to the search
             return `
                 <li>
-                <span class="place">${result.name}<br/>
-                ${result.category}<br/>
+                <span class= "place">
+                <div class="list-name">
+                    ${result.name}
+                </div>
+                ${category}<br/>
+                <address>
                 ${result.address_line_1}<br/>
-                ${result.zip}<br/></span>
+                ${result.city}<br/>
+                ${result.zip}<br/>
+                </address>
+                </span>
                 </li>
                 `
             ;
